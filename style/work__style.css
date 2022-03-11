@@ -1,0 +1,181 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    background: url("../img/main_background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'FellbaumGrotesk';
+    backdrop-filter: blur(2px);
+}
+
+@font-face {
+    font-family: 'FellbaumGrotesk';
+    src: url("../style/fonts/FellbaumGrotesk-Medium.woff") format('woff');
+    src: url("../style/fonts/FellbaumGrotesk-Medium.woff2") format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #fff;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+a:hover {
+    color: #708090;
+}
+
+a:active {
+    color: #A52A2A;
+}
+
+
+/* HEADER */
+
+.header {
+    padding-top: 5px;
+}
+
+.header__container {
+    background-image: url("../img/header__background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 0;
+}
+
+.header__firstline {
+    display: flex;
+    padding: 20px;
+}
+
+.back {
+    font-size: 20px;
+}
+
+.back::before {
+    background: url("");
+}
+
+.tel {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 5px;
+    padding: 20px 0;
+}
+
+.header_logo_link {
+    position: relative;
+    align-self: center;
+    margin-left: auto;
+    padding-left: 65px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.header_logo_link::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-20%);
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/logo.svg");
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.navbar__list_link {
+    margin-right: 50px;
+    font-size: 20px;
+    transition: transform .3s ease-in-out;
+}
+
+
+/* WORK */
+
+.work {
+    display: flex;
+    flex-flow: column;
+    padding: 0 25px;
+}
+
+.heading {
+    align-self: center;
+    justify-self: center;
+    padding: 15px 0;
+}
+
+.img__work {
+    height: 800px;
+}
+
+.img__work:not(:last-child) {
+    margin-bottom: 30px;
+}
