@@ -9,32 +9,41 @@
 }
 
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2'), url('opensans-light-webfont.woff') format('woff');
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'), url('fonts/kaushanscript-regular-webfont.woff') format('woff');
+    font-display: swap;
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2'), url('opensans-regular-webfont.woff') format('woff');
+    font-family: 'Open Sans';
+    src: local('OpenSans-Light'), local('Open-Sans-Light'), url('fonts/opensans-light-webfont.woff2') format('woff2'), url('fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
+    font-display: swap;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open_sansbold';
-    src: url('opensans-bold-webfont.woff2') format('woff2'), url('opensans-bold-webfont.woff') format('woff');
+    font-family: 'Open Sans';
+    src: local('OpenSans-Regular'), local('Open-Sans-Regular'), url('fonts/opensans-regular-webfont.woff2') format('woff2'), url('fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('OpenSans-Bold'), local('Open-Sans-Bold'), url('fonts/opensans-bold-webfont.woff2') format('woff2'), url('fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
     font-style: normal;
 }
 
 body {
-    background-image: url("../img/bg.jpg");
-    background-attachment: fixed;
-    backdrop-filter: blur(4px);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Kaushan Script', sans-serif;
     overflow-x: hidden;
+    color: #FFFFFF;
 }
 
 .container {
@@ -42,8 +51,7 @@ body {
     max-width: 1600px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #E2E2E2;
-    background-size: cover;
+    /* background-color: #E2E2E2; */
     /* background-color: #F0E68C; */
     /* background-color: #8FBC8F; */
     /* background-color: #696969; */
@@ -73,9 +81,6 @@ ul {
 }
 
 h2 {
-    display: inline-block;
-    margin-bottom: 20px;
-    border-bottom: 2px solid black;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -83,11 +88,11 @@ h2 {
 }
 
 a:hover {
-    color: #708090;
+    color: rgba(45, 209, 127, 0.9);
 }
 
 a:active {
-    color: #A52A2A;
+    color: rgba(0, 252, 126, 0.9);
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -108,23 +113,26 @@ a:active {
     flex-wrap: nowrap;
 }
 
-.svg {
-    z-index: 1000;
+a {
+    color: #FFFFFF;
 }
 
-a {
-    color: #000000;
+:root {
+    --text-shadow: 2px 1px gray;
 }
 
 
 /* HEADER */
 
+.header {
+    background-color: rgba(0, 110, 255, 0.3);
+}
+
 .header__container {
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url("../img/header__background.jpg");
-    background-position: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .header__burger-opn,
@@ -137,96 +145,94 @@ a {
     font-weight: 300;
 }
 
-.header__firstline {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 0;
+.header__navbar-list {
+    align-items: center;
 }
 
-.tel {
-    align-self: center;
-    margin-right: 5px;
-    padding: 20px;
-}
-
-.header_logo_link {
-    position: relative;
-    align-self: center;
-    padding-left: 65px;
-    font-size: 30px;
-    font-weight: 300;
+.header__navbar-item:not(:last-child) {
     margin-right: 50px;
-}
-
-.header_logo_link::before {
-    content: "";
-    position: absolute;
-    transform: translateY(-20%);
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/logo.svg");
-}
-
-.navbar__list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
 }
 
 .header__navbar-link {
-    margin-right: 50px;
-    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-shadow: var(--text-shadow);
     transition: transform .3s ease-in-out;
 }
 
-.header_logo_link:hover:before {
-    background-image: url("../img/logo.svg");
-}
-
-.header_logo_link:active:before {
-    background-image: url("../img/logo.svg");
+.header__navbar-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 
 /* MAIN */
 
-.main__content {
-    display: flex;
-    flex-flow: column;
-    padding-right: 50px;
-    padding-left: 50px;
+.main__background-left,
+.main__background-right {
+    position: absolute;
+    height: 90vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
 }
 
-.main__heading {
-    padding: 20px 0;
-    align-self: center;
-    justify-self: center;
+.main__background-left {
+    width: 60%;
+}
+
+.main__background-right {
+    width: 40%;
+    left: 60%;
+    object-position: left;
+}
+
+.main__container {
+    display: flex;
+    flex-flow: column;
 }
 
 
 /* MEIST */
 
-.aboutus {
-    margin-bottom: 20px;
+.about {
+    height: 75vh;
 }
 
-.aboutus__text {
+.about__heading {
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Kaushan Script';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 54px;
+    line-height: 60px;
+    color: #0c0352;
+    text-shadow: var(--text-shadow);
 }
 
-.aboutus__text_link {
+.about__text {
+    width: 60%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 54px;
+    text-shadow: var(--text-shadow);
+}
+
+.about__link {
     border-bottom: 1px solid black;
 }
 
-.aboutus__text_link:hover {
+.about__link:hover {
     border-bottom: 1px solid #708090;
 }
 
-.aboutus__text_link:active {
+.about__link:active {
     border-bottom: 1px solid #A52A2A;
 }
 

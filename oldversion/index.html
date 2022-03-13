@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" href="style/fonts/opensans-bold-webfont.woff2" as="font">
+    <link rel="preload" href="style/fonts/opensans-light-webfont.woff2" as="font">
+    <link rel="preload" href="style/fonts/opensans-regular-webfont.woff2" as="font">
+    <title>Puhaskivi.ee</title>
+</head>
+
+<body>
+    <object type="image/svg+xml" data="img/sprite.svg" style="display:none;">Your  browser does not support SVG</object>
+
+    <!-- HEADER -->
+    <header class="header">
+        <section class="container header__container flex">
+
+            <button class="header__burger-opn" aria-label="Открыть меню">
+              <svg>
+                <use xlink="#burger-opn"></use>
+              </svg>
+            </button>
+
+            <a href="https://www.puhaskivi.ee" class="header__logo flex">
+                <svg class=" svg" width="60" height="60" viewbox="0 0 60 60">
+              <use xlink="#log" ></use>
+            </svg> Puhaskivi
+            </a>
+
+            <nav class="header__navbar flex">
+                <button class=" header__burger-cls " aria-label="Закрыть меню ">
+                  <svg>
+                    <use xlink="#burger-close "></use>
+                  </svg>
+              </button>
+                <ul class="header__navbar-list flex ">
+                    <li class="header__navbar-item ">
+                        <a class="header__navbar-link " href="#aboutus ">Meist</a>
+                    </li>
+                    <li class="header__navbar-item ">
+                        <a class="header__navbar-link " href="works.html ">Meie tööd</a>
+                    </li>
+                    <li class="header__navbar-item ">
+                        <a class="header__navbar-link " href="#contacts ">Kontaktid</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+    <!-- MAIN -->
+
+    <main class="main ">
+        <section class="container main__container">
+            <h2 class="main__heading">
+                Tere Tulemast!
+            </h2>
+            <!-- MEIST -->
+            <section class="aboutus ">
+                <h2 class="aboutus__heading ">Meist</h2>
+                <p class="aboutus__text ">
+                    Sambla on väga tähtis maha puhastada õigel agal sest see rikub kive ja muudab selle värve, lisaks rikub maja üldvaadet. Samuti puuaiaga ,fassaadiga, katusega. Firma tegutseb 2001 aastast ja meie selja taga on ainult nõus kliendid kelle oleme kvaliteetselt
+                    teenindanud. Me kasutame ainult uut ja kvaliteetset tehnikat. Tutvuge meie töödega siin-
+                    <a class="aboutus__link " href="works.html ">
+                meie tööd</a>
+                </p>
+            </section>
+
+            <!-- TÖÖ -->
+            <section class="work ">
+                <h3 class="work__heading ">
+                    Mis me teeme?
+                </h3>
+                <div class="work__list ">
+
+                    <div class="work__item_one work__block_left ">
+                        <h3 class="work__item_heading ">
+                            Tänavakivi puhastamine(sammal, õli, rehvijaljed)
+                        </h3>
+                    </div>
+
+
+                    <div class="work__block_right ">
+                        <div class="work__item_two ">
+                            <h3 class="work__item_heading ">
+                                Aeda pesemine
+                            </h3>
+                        </div>
+                        <div class="work__item_three ">
+                            <h3 class="work__item_heading ">
+                                Katusepesemis tööd
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- FOOTER -->
+
+    <footer class="footer ">
+        <div class="container footer__container ">
+
+            <div class="footer____left ">
+                <h3 class="footer__left-heading ">Võta meiega ühendust</h3>
+                <ul class="footer__left-list ">
+                    <li class="footer__list-item ">
+                        <a class="footer__list-link " href="tel:+37255500362 ">
+                            <svg>
+                                <use xlink="#tel "></use>
+                              </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__list_item ">
+                        <a class="footer__list-link " href="mailto:go8351@gmail.com ">
+                            <svg>
+                                <use xlink="#mail "></use>
+                              </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__list_item ">
+                        <a class="footer__list-link " href="https://www.facebook.com/21fitt " target="_blank ">
+                            <svg>
+                                <use xlink="#fb "></use>
+                              </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__right ">
+                <h3 class="footer__right-heading ">SAADA PÄRING</h3>
+                <form class="footer__right-form " action="POST ">
+                    <input class="footer__form-input " type="text " data-validate-field="name " data-validate-rules="name " placeholder="Nimi* ">
+                    <input class="footer__form-input " type="tel " data-validate-field="tel " data-validate-rules="tel " placeholder="Telephone* ">
+                    <input class="footer__form-input " type="text " placeholder="Töö kirjeldus ">
+                </form>
+                <button class="footer__form-btn " type="submit ">
+                Saada
+                </button>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
