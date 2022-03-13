@@ -80,7 +80,7 @@ ul {
     padding: 0;
 }
 
-h2 {
+h3 {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -218,7 +218,6 @@ a {
     font-size: 30px;
     line-height: 42px;
     color: #303030;
-    /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .about__link {
@@ -237,88 +236,85 @@ a {
 /* TÖÖ */
 
 .work {
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #232323;
 }
 
+.work__heading {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.work__item {
+    display: flex;
+}
+
+.work__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.work__item:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.work__img {
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.work__item-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .work__item-heading {
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 5px 5px;
+    margin-bottom: 40px;
+    text-align: right;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 40px;
-    color: white;
+    font-size: 48px;
+    line-height: 56px;
 }
 
-.work__block_list {
-    display: flex;
-    margin-bottom: 20px;
+.work__item-text {
+    width: 60%;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
 }
 
-.work__item_one,
-.work__item_two,
-.work__item_three {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.work__item-text-one,
+.work__item-text-three {
+    margin-left: auto;
+    text-align: right;
 }
 
-.work__item_one {
-    margin-right: 20px;
-    background-image: url("../img/work_for_index/work__list_one.jpg");
-    min-height: 600px;
-    width: calc(50% - 15px);
+.work__item-heading-two,
+.work__item-text-two {
+    text-align: left;
+    margin-right: auto;
 }
 
-.work__block_right {
-    width: calc(50% - 15px);
-}
-
-.work__item_two {
-    margin-bottom: 20px;
-    background-image: url("../img/work_for_index/work__list_two.jpg");
-    min-height: 290px;
-    width: 100%;
-}
-
-.work__item_three {
-    background-image: url("../img/work_for_index/work__list_three.jpg");
-    background-position: center top;
-    height: 290px;
-    width: 100%;
+.work__item-link {
+    border-bottom: 1px solid #FFFFFF;
 }
 
 
 /* FOOTER */
 
-.section__footer {
-    margin-bottom: 10px;
-    border-radius: 5px;
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.footer__content {
-    display: flex;
-    padding: 20px;
-    background-image: url("../img/footer__background_opacity.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0 0 5px 5px;
-}
-
-.footer__block {
-    width: 50%;
-}
-
-.footer__left {
-    padding-top: 10px;
-    padding-left: 50px;
+.footer__left,
+.footer__right {
+    width: calc(100% / 2 - 20px);
 }
 
 .footer__heading_social {
@@ -363,8 +359,12 @@ a {
     mask-image: url("../img/footer/footer__socialicon_fb.svg");
 }
 
-.footer__form {
-    display: flex;
+.footer__right-heading,
+.footer__left-heading {
+    color: #232323;
+}
+
+.footer__right-form {
     flex-flow: column;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -375,39 +375,40 @@ a {
     font-size: 25px;
 }
 
-.footer__form_input {
-    width: 350px;
-    border: 0;
+.footer__form-input {
+    width: 100%;
     padding-left: 10px;
+    border: 1px solid #000000;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: #232323;
 }
 
-.footer__form_input::placeholder {
+.footer__form-input::placeholder {
     vertical-align: text-bottom;
+    color: #FFFFFF;
 }
 
-.footer__form_input:not(:last-child) {
+.footer__form-input:not(:last-child) {
     margin-bottom: 10px;
     height: 35px;
 }
 
-.footer__form_input:last-child {
+.footer__form-input:last-child {
     height: 75px;
 }
 
-.footer__form_checkbox {
+.footer__form-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.footer__form_checkbox+label {
+.footer__form-checkbox+label {
     display: inline-flex;
     align-items: center;
 }
 
-.footer__form_checkbox+label::before {
+.footer__form-checkbox+label::before {
     content: '';
     display: inline-block;
     width: 12px;
