@@ -172,7 +172,7 @@ a {
 .main__background-left,
 .main__background-right {
     position: absolute;
-    height: 90vh;
+    height: 900px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -191,20 +191,15 @@ a {
     object-position: left;
 }
 
-.main__container {
-    display: flex;
-    flex-flow: column;
-}
-
 
 /* MEIST */
 
 .about {
-    height: 75vh;
+    margin-bottom: 120px;
 }
 
 .about__heading {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     text-align: center;
     font-family: 'Kaushan Script';
     font-style: normal;
@@ -216,12 +211,14 @@ a {
 }
 
 .about__text {
-    width: 60%;
+    width: 51%;
+    text-align: right;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 54px;
-    text-shadow: var(--text-shadow);
+    font-size: 30px;
+    line-height: 42px;
+    color: #303030;
+    /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .about__link {
@@ -238,6 +235,11 @@ a {
 
 
 /* TÖÖ */
+
+.work {
+    padding-top: 40px;
+    background-color: #232323;
+}
 
 .work__item-heading {
     padding: 5px 10px;
