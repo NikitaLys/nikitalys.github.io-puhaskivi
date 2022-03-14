@@ -195,11 +195,11 @@ a {
 /* MEIST */
 
 .about {
-    margin-bottom: 120px;
+    margin-bottom: 350px;
 }
 
 .about__heading {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
     font-family: 'Kaushan Script';
     font-style: normal;
@@ -210,14 +210,17 @@ a {
     text-shadow: var(--text-shadow);
 }
 
-.about__text {
-    width: 51%;
-    text-align: right;
+.about__quote {
+    width: 50%;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 45px;
     color: #303030;
+}
+
+.about__quote-author {
+    font-size: 24px;
 }
 
 .about__link {
@@ -260,7 +263,6 @@ a {
 
 .work__img {
     width: 600px;
-    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
@@ -310,6 +312,7 @@ a {
 .footer {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #E2E2E2;
 }
 
 .footer__left,
@@ -317,17 +320,14 @@ a {
     width: calc(100% / 2 - 20px);
 }
 
-.footer__heading_social {
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 40px;
-    line-height: 40px;
-    color: #A52A2A;
+.footer__left-heading {
+    margin-bottom: 65px;
 }
 
-.footer__left_list {
-    display: flex;
-    padding: 25px 55px;
+.footer__left-list {
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .footer__social_link {
@@ -364,36 +364,45 @@ a {
     color: #232323;
 }
 
+.footer__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right-heading {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
 .footer__right-form {
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
     flex-flow: column;
-    margin-right: 20px;
+    width: 85%;
     margin-bottom: 10px;
 }
 
-.footer__center_heading {
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-
-.footer__form-input {
-    width: 100%;
+.footer__right-input {
+    width: 80%;
     padding-left: 10px;
     border: 1px solid #000000;
     border-radius: 5px;
     background-color: #232323;
 }
 
-.footer__form-input::placeholder {
+.footer__right-input::placeholder {
     vertical-align: text-bottom;
     color: #FFFFFF;
 }
 
-.footer__form-input:not(:last-child) {
+.footer__right-input {
     margin-bottom: 10px;
     height: 35px;
 }
 
-.footer__form-input:last-child {
+.footer__right-input-descr {
     height: 75px;
 }
 
@@ -415,7 +424,7 @@ a {
     height: 12px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #CACACA;
+    border: 1px solid #232323;
     background-image: url("../img/footer/footer__checkbox.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -425,39 +434,28 @@ a {
     cursor: pointer;
 }
 
-.footer__right {
-    align-self: center;
-    margin-left: 0;
-    padding-top: 10px;
-}
-
-.footer__right_text {
-    margin-left: 0;
-    width: 85%;
-    backdrop-filter: blur(1px);
-    font-size: 30px;
-    color: black;
-    text-shadow: 3px 3px 3px white;
-}
-
-.footer__form_btn {
-    padding: 0.5em 2em;
-    border: 1px solid gray;
-    border-radius: 5px;
+.footer__right-btn {
+    align-self: flex-end;
+    width: 30%;
+    margin-right: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #232323;
+    border-radius: 20px;
     cursor: pointer;
     transition: transform .3s ease-in-out;
 }
 
-.footer__form_input:focus::placeholder {
+.footer__form-input:focus::placeholder {
     color: transparent;
 }
 
-.footer__form_btn:hover {
+.footer__form-btn:hover {
     background-color: #696969;
     /* color: white; */
 }
 
-.footer__form_btn:active {
+.footer__form-btn:active {
     opacity: 0.5;
     /* color: white; */
     transform: perspective(17px);

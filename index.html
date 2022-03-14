@@ -39,20 +39,20 @@
             </a>
 
             <nav class="header__navbar flex">
-                <button class=" header__burger-cls " aria-label="Закрыть меню ">
+                <button class=" header__burger-cls" aria-label="Закрыть меню">
                   <svg>
-                    <use xlink="#burger-close "></use>
+                    <use xlink="#burger-close"></use>
                   </svg>
               </button>
-                <ul class="header__navbar-list flex ">
-                    <li class="header__navbar-item ">
-                        <a class="header__navbar-link " href="#aboutus ">Meist</a>
+                <ul class="header__navbar-list flex">
+                    <li class="header__navbar-item">
+                        <a class="header__navbar-link" href="#aboutus">Meist</a>
                     </li>
-                    <li class="header__navbar-item ">
-                        <a class="header__navbar-link " href="works.html ">Meie tööd</a>
+                    <li class="header__navbar-item">
+                        <a class="header__navbar-link" href="works.html">Meie tööd</a>
                     </li>
-                    <li class="header__navbar-item ">
-                        <a class="header__navbar-link " href="#contacts ">Kontaktid</a>
+                    <li class="header__navbar-item">
+                        <a class="header__navbar-link" href="#contacts">Kontaktid</a>
                     </li>
                 </ul>
             </nav>
@@ -74,12 +74,15 @@
                 <h2 class="about__heading">
                     Tere Tulemast!
                 </h2>
+                <blockquote class="about__quote">
+                    <q>
+                      Lase samblast lahti ennem kui ta rikub sinu hoovi pilti
+                    </q>
+                </blockquote>
 
-
-                <p class="about__text">
+                <!-- <p class=" about__text">
                     Väga tähtis maha puhastada õigel agal sest see rikub kive ja muudab selle värve, lisaks rikub maja üldvaadet. Samuti puuaiaga ,fassaadiga, katusega. Firma tegutseb 2001 aastast ja meie selja taga on ainult nõus kliendid kelle oleme&nbsp;kvaliteetselt&nbsp;teenindanud.
-
-                </p>
+                </p> -->
             </div>
         </section>
 
@@ -87,7 +90,7 @@
         <section class="work" id="work">
             <div class="container">
                 <h3 class="work__heading">
-                    Mis me teeme?
+                    Millega me tegeleme
                 </h3>
 
                 <ul class="work__list">
@@ -145,44 +148,45 @@
     <footer class="footer" id="footer">
         <div class="container footer__container flex">
 
-            <div class=" footer__left ">
-                <h3 class="footer__left-heading ">Võta meiega ühendust</h3>
-                <ul class="footer__left-list ">
-                    <li class="footer__list-item ">
-                        <a class="footer__list-link " href="tel:+37255500362 ">
-                            <!-- <svg>
-                                <use xlink="#tel "></use>
-                              </svg> -->
+            <div class=" footer__left">
+                <h3 class="footer__left-heading">Võta meiega ühendust</h3>
+                <ul class="footer__left-list flex">
+                    <li class="footer__left-item">
+                        <a class="footer__left-link" href="tel:+37255500362">
+                            <svg width="60" height="60" viewbox="0 0 560 360">
+                            <path d="M401.129 311.475c-1.137-3.426-8.371-8.473-21.697-15.129-3.61-2.098-8.754-4.949-15.41-8.566a1437.412 1437.412 0 0 1-18.13-9.996 605.612 605.612 0 0 1-15.276-8.846c-.76-.571-3.139-2.234-7.136-5-4.001-2.758-7.375-4.805-10.14-6.14-2.759-1.327-5.473-1.995-8.138-1.995-3.806 0-8.56 2.714-14.268 8.135a139.01 139.01 0 0 0-15.7 17.706c-4.757 6.379-9.802 12.275-15.126 17.7-5.332 5.427-9.713 8.138-13.135 8.138-1.718 0-3.86-.479-6.427-1.424-2.566-.951-4.518-1.766-5.858-2.423-1.328-.671-3.607-1.999-6.845-4.004-3.244-1.999-5.048-3.094-5.428-3.285-26.075-14.469-48.438-31.029-67.093-49.676-18.649-18.658-35.211-41.019-49.676-67.097-.19-.381-1.287-2.19-3.284-5.424-2-3.237-3.333-5.518-3.999-6.854-.666-1.331-1.475-3.283-2.425-5.852s-1.427-4.709-1.427-6.424c0-3.424 2.713-7.804 8.138-13.134 5.424-5.327 11.326-10.373 17.7-15.128a138.95 138.95 0 0 0 17.701-15.699c5.424-5.711 8.136-10.467 8.136-14.273 0-2.663-.666-5.378-1.997-8.137-1.332-2.765-3.378-6.139-6.139-10.138-2.762-3.997-4.427-6.374-4.999-7.139a627.13 627.13 0 0 1-8.848-15.271 1441.4 1441.4 0 0 1-9.995-18.131c-3.615-6.658-6.468-11.799-8.564-15.415C98.986 9.233 93.943 1.997 90.516.859 89.183.288 87.183 0 84.521 0c-5.142 0-11.85.95-20.129 2.856-8.282 1.903-14.799 3.899-19.558 5.996-9.517 3.995-19.604 15.605-30.264 34.826C4.863 61.566.01 79.271.01 96.78c0 5.135.333 10.131.999 14.989.666 4.853 1.856 10.326 3.571 16.418 1.712 6.09 3.093 10.614 4.137 13.56 1.045 2.948 2.996 8.229 5.852 15.845 2.852 7.614 4.567 12.275 5.138 13.988 6.661 18.654 14.56 35.307 23.695 49.964 15.03 24.362 35.541 49.539 61.521 75.521 25.981 25.98 51.153 46.49 75.517 61.526 14.655 9.134 31.314 17.032 49.965 23.698 1.714.568 6.375 2.279 13.986 5.141 7.614 2.854 12.897 4.805 15.845 5.852 2.949 1.048 7.474 2.43 13.559 4.145 6.098 1.715 11.566 2.905 16.419 3.576 4.856.657 9.853.996 14.989.996 17.508 0 35.214-4.856 53.105-14.562 19.219-10.656 30.826-20.745 34.823-30.269 2.102-4.754 4.093-11.273 5.996-19.555 1.909-8.278 2.857-14.985 2.857-20.126.006-2.673-.281-4.668-.855-6.012z"/>
+                            </svg>
                         </a>
                     </li>
 
-                    <li class="footer__list_item ">
-                        <a class="footer__list-link " href="mailto:go8351@gmail.com ">
-                            <!-- <svg>
-                                <use xlink="#mail "></use>
-                              </svg> -->
+                    <li class="footer__left-item">
+                        <a class="footer__left-link" href="mailto:go8351@gmail.com">
+                            <svg width="60" height="60" viewbox="0 0 30 30">
+                              <path d="M4 5c-1.093 0-2 .907-2 2v16c0 1.093.907 2 2 2h22c1.093 0 2-.907 2-2V7c0-1.093-.907-2-2-2H4zm2.7 2h16.6L15 13.135 6.7 7zM5 9.475l10 7.39 10-7.39V23H5V9.475z"/></symbol>
+                            </svg>
                         </a>
                     </li>
+                    <svg width="60" height="60" viewbox="0 0 30 30">
+                      <path d="M12 27V15H8v-4h4V8.852C12 4.785 13.981 3 17.361 3c1.619 0 2.475.12 2.88.175V7h-2.305C16.501 7 16 7.757 16 9.291V11h4.205l-.571 4H16v12h-4z"/></symbol>
 
-                    <li class="footer__list_item ">
-                        <a class="footer__list-link " href="https://www.facebook.com/21fitt " target="_blank ">
-                            <!-- <svg>
-                                <use xlink="#fb "></use>
-                              </svg> -->
+                              </svg>
+                    <li class="footer__left-item">
+                        <a class="footer__left-link" href="https://www.facebook.com/21fitt" target="_blank">
+
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer__right ">
-                <h3 class="footer__right-heading ">SAADA PÄRING</h3>
-                <form class="footer__right-form flex" action="POST ">
-                    <input class="footer__form-input " type="text " data-validate-field="name " data-validate-rules="name " placeholder="Nimi* ">
-                    <input class="footer__form-input " type="tel " data-validate-field="tel " data-validate-rules="tel " placeholder="Telephone* ">
-                    <input class="footer__form-input " type="text " placeholder="Töö kirjeldus ">
-                    <input class="" type="checkbox">
+            <div class="footer__right flex">
+                <h3 class="footer__right-heading">SAADA PÄRING</h3>
+                <form class="footer__right-form flex" action="POST">
+                    <input class="footer__right-input" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*">
+                    <input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Telephone*">
+                    <input class="footer__right-input footer__right-input-descr" type="text" placeholder="Töö kirjeldus">
+                    <input class="footer__form-checkbox" type="checkbox">
                 </form>
-                <button class="footer__form-btn " type="submit ">
+                <button class="footer__right-btn" type="submit">
                 Saada
                 </button>
             </div>
