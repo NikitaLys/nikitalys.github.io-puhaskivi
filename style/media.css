@@ -1,0 +1,81 @@
+        @media screen and (max-width: 1400px) {
+            .container {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            h3 {
+                font-size: 26px;
+            }
+            /* HEADER */
+            .header {
+                background-color: rgba(0, 110, 255, 0.5);
+            }
+            .header__navbar-item:not(:last-child) {
+                margin-right: 30px;
+            }
+            .header__navbar-link {
+                font-size: 28px;
+            }
+            /* MAIN */
+            .main__background-left {
+                width: 100%;
+            }
+            .main__background-right {
+                width: 30%;
+                left: 70%;
+            }
+            /* ABOUT */
+            .about {
+                margin-bottom: 250px;
+            }
+            .about__heading {
+                margin-bottom: 150px;
+                font-size: 38px;
+            }
+            .about__quote {
+                width: 50%;
+                font-size: 24px;
+            }
+            /* WORK */
+            .work__img {
+                width: 450px;
+                height: 450px;
+            }
+            .work__item-heading {
+                font-size: 36px;
+                line-height: 40px;
+            }
+            .work__item-text {
+                width: 80%;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            /* FOOTER */
+            .footer__right-heading,
+            .footer__left-heading {
+                font-size: 28px;
+            }
+            .footer__right-form {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            /* HEADER */
+            .header {
+                background-color: rgba(49, 49, 49, 0.4);
+            }
+            .header__burger-opn {
+                display: block;
+            }
+            .header__navbar {
+                display: none;
+            }
+            /* MAIN */
+            .main__background-right {
+                display: none;
+            }
+        }

@@ -266,6 +266,10 @@ a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
+.work__img:not(.work__img-two) {
+    margin-right: 10px;
+}
+
 .work__item-descr {
     display: flex;
     flex-direction: column;
@@ -320,8 +324,13 @@ a {
     width: calc(100% / 2 - 20px);
 }
 
+.footer__left-logo {
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
 .footer__left-heading {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 .footer__left-list {
@@ -330,37 +339,9 @@ a {
     width: 50%;
 }
 
-.footer__social_link {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    background-color: black;
-    transition: background-color .3s ease;
-}
-
-.footer__list_item:not(:last-child) {
-    margin-right: 20px;
-}
-
-.social__link_tel {
-    -webkit-mask-image: url("../img/footer/tel.svg");
-    mask-image: url("../img/footer/tel.svg");
-}
-
-.social__link_mail {
-    -webkit-mask-image: url("../img/footer/footer__socialicon_email.svg");
-    mask-image: url("../img/footer/footer__socialicon_email.svg");
-}
-
-.social__link_fb {
-    -webkit-mask-image: url("../img/footer/footer__socialicon_fb.svg");
-    mask-image: url("../img/footer/footer__socialicon_fb.svg");
-}
-
 .footer__right-heading,
 .footer__left-heading {
+    font-size: 32px;
     color: #232323;
 }
 
@@ -404,6 +385,11 @@ a {
 
 .footer__right-input-descr {
     height: 75px;
+    resize: none;
+}
+
+.footer__right-input-descr::placeholder {
+    padding-top: 5px;
 }
 
 .footer__form-checkbox {
@@ -461,15 +447,45 @@ a {
     transform: perspective(17px);
 }
 
-.footer__social_link:hover {
-    background-color: #708090;
+
+/* hover/active/focus */
+
+.footer__right-input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
-.footer__social_link:focus {
-    outline: 2px solid #A52A2A;
+.footer__right-input::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
-.footer__social_link:active {
-    outline: 0;
-    background-color: #A52A2A;
+.footer__right-input:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.footer__right-input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.footer__right-input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer__right-input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer__right-input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer__right-input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
