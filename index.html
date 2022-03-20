@@ -25,8 +25,12 @@
         <section class="container header__container flex">
 
             <button class="header__burger-opn" aria-label="Открыть меню">
-              <svg width="36" height="29" viewbox="0 0 36 29">
-                <use xlink="img/sprite.svg#burger-opn"></use>
+              <svg width="36" height="29" viewbox="0 0 36 29" fill="none">
+                <!-- <use xlink="img/sprite.svg#burger-opn"></use> -->
+                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
+<rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
+<path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+<path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
               </svg>
             </button>
 
@@ -84,7 +88,7 @@
             </div>
         </section>
 
-        <!-- TÖÖ -->
+        <!-- WORK -->
         <section class="work" id="work">
             <div class="container">
                 <h3 class="work__heading">
@@ -101,8 +105,7 @@
                                 Tänavakivi puhastamine
                             </h4>
                             <p class="work__item-text work__item-text-one">
-                                Aja jooksultub mustaks, ja kivi muu seda on tarvis pesta et oleks jalle nagu uus. See teeb Teie maja vaadet uuevaarseks ja tuju heaks!
-                            </p>
+                                Aja jooksul kivi muutub mustaks ja seda on tarvis aeg ajalt pesta, see annab kividele uue elu ning parandab kogu maja vaadet </p>
                         </div>
 
                     </li>
@@ -115,7 +118,7 @@
                                 Aeda pesemine
                             </h4>
                             <p class="work__item-text work__item-text-two">
-                                Meie kliimaga voib juhtuda nii et sammal kasvab kivide vahel ja kui lasta sellele protsessile edasi areneda siis kivi muutub tumedaks ja loppude lopuks voivad tekkida m6rasid
+                                Meie kliimaga voib juhtuda nii et sammal kasvab kivide vahel ja kui lasta sellele protsessile edasi areneda siis kivi muutub tumedaks ja lõppude lõpuks võivad tekkida mõrasid
                             </p>
                         </div>
 
@@ -123,14 +126,14 @@
                     </li>
                     <li class="work__item">
                         <picture>
-                            <img class="work__img" src="img/work_for_index/work-empty.jpg" height="600" width="600" alt="">
+                            <img class="work__img" src="img/work_for_index/work__list-three.jpg" height="600" width="600" alt="">
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading">
                                 Oleme avatud uutele pakkumistele </h4>
                             <p class="work__item-text work__item-text-three">
-                                Ootame teie pakkumised
-                                <a class="work__item-link" href="#footer">siin</a>
+                                Autorehvid jätavad musta jälje kivi peal ja meie saame teid sellega aidata, eemaldame mustuse kiirelt ja kvaliteetselt&nbsp;ära
+                                <!-- <a class="work__item-link" href="#footer">siin</a> -->
                             </p>
                         </div>
                     </li>
@@ -151,13 +154,13 @@
                 <svg class="footer__left-logo" width="166" height="50" viewbox="0 0 166 50">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
-                <h3 class="footer__left-heading">Võta meiega ühendust</h3>
+                <h3 class="footer__left-heading">Kui vajate meie abi siis võtke julgelt ühendust</h3>
                 <ul class="footer__left-list flex">
                     <li class="footer__left-item">
-                        <a class="footer__left-link" href="tel:+37255500362">
-                            <svg width="60" height="60" viewbox="0 0 560 400">
-                              <use xlink:href="img/sprite.svg#tel"></use>
-                            </svg>
+                        <a class="footer__left-link" href="https://www.facebook.com/21fitt" target="_blank">
+                            <svg width="60" height="60" viewbox="0 0 30 30">
+                            <use xlink:href="img/sprite.svg#fb"></use>
+                                    </svg>
                         </a>
                     </li>
 
@@ -168,12 +171,15 @@
                             </svg>
                         </a>
                     </li>
-                    <svg width="60" height="60" viewbox="0 0 30 30">
-                      <use xlink:href="img/sprite.svg#fb"></use>
-                              </svg>
-                    <li class="footer__left-item">
-                        <a class="footer__left-link" href="https://www.facebook.com/21fitt" target="_blank">
 
+                    <li class="footer__left-item">
+                        <a class="footer__left-link footer__left-tel" href="tel:+37255500362">+372 555 00 362
+                      </a>
+
+                        <a class="footer__left-link footer__left-mob" href="tel:+37255500362">
+                            <svg width="60" height="60" viewbox="0 0 560 400">
+                          <use xlink:href="img/sprite.svg#tel"></use>
+                        </svg>
                         </a>
                     </li>
                 </ul>
@@ -183,8 +189,8 @@
                 <h3 class="footer__right-heading">SAADA PÄRING</h3>
                 <form class="footer__right-form flex" id="footer__form" action="POST">
                     <input class="footer__right-input" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*">
-                    <input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Telephone*">
-                    <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Komentar" name="textarea" required form="footer__form"></textarea>
+                    <input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Tel.*">
+                    <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Kommentaar" name="textarea" required form="footer__form"></textarea>
                     <input class="footer__form-checkbox " type="checkbox ">
                 </form>
                 <button class="footer__right-btn " type="submit ">
