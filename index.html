@@ -26,11 +26,7 @@
 
             <button class="header__burger-opn" aria-label="Открыть меню">
               <svg width="36" height="29" viewbox="0 0 36 29" fill="none">
-                <!-- <use xlink="img/sprite.svg#burger-opn"></use> -->
-                <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
-<rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
-<path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
-<path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
+                <use xlink:href="img/sprite.svg#burger-opn"></use>
               </svg>
             </button>
 
@@ -42,17 +38,17 @@
 
             <nav class="header__navbar flex">
                 <button class=" header__burger-cls" aria-label="Закрыть меню">
-                  <svg>
-                    <use xlink="#burger-close"></use>
+                  <svg width="29" height="29" viewbox="0 0 29 29" fill="#FFFFFF">
+                    <use xlink:href="img/sprite.svg#burger-close"></use>
                   </svg>
               </button>
                 <ul class="header__navbar-list flex">
                     <li class="header__navbar-item">
                         <a class="header__navbar-link" href="#aboutus">Meist</a>
                     </li>
-                    <li class="header__navbar-item">
+                    <!-- <li class="header__navbar-item">
                         <a class="header__navbar-link" href="works.html">Meie tööd</a>
-                    </li>
+                    </li> -->
                     <li class="header__navbar-item">
                         <a class="header__navbar-link" href="#contacts">Kontaktid</a>
                     </li>
@@ -200,6 +196,8 @@
         </div>
 
     </footer>
+    <!-- JS -->
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 *:focus-visible {
     outline: 0;
 }
@@ -37,7 +41,6 @@
 body {
     font-family: 'Open Sans', 'Kaushan Script', sans-serif;
     overflow-x: hidden;
-    box-sizing: border-box;
     color: #FFFFFF;
 }
 
@@ -68,7 +71,7 @@ button {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1,

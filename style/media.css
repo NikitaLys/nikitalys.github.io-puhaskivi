@@ -68,11 +68,33 @@
         .header {
             background-color: rgba(49, 49, 49, 0.4);
         }
-        .header__burger-opn {
+        .header__burger-opn,
+        .header__burger-cls {
             display: block;
+        }
+        .header__burger-cls {
+            margin-bottom: 80px;
         }
         .header__navbar {
             display: none;
+            width: 100vw;
+            height: 100vh;
+            padding: 50px 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #232323;
+            overflow: hidden;
+        }
+        .header__navbar.active {
+            display: block;
+        }
+        .header__navbar-list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header__navbar-item:not(:last-child) {
+            margin-bottom: 20px;
         }
         /* MAIN */
         .main__background-right {
@@ -184,6 +206,9 @@
             .header__logo svg {
                 height: 50px;
                 width: 100px;
+            }
+            .header__navbar {
+                padding: 40px 40px;
             }
             /* MAIN */
             .about {
