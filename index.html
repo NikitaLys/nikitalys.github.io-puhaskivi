@@ -24,33 +24,33 @@
 
         <section class="container header__container flex">
 
-            <button class="header__burger-opn" aria-label="Открыть меню">
+            <!-- <button class="header__burger-opn" aria-label="Открыть меню">
               <svg width="36" height="29" viewbox="0 0 36 29" fill="none">
                 <use xlink:href="img/sprite.svg#burger-opn"></use>
               </svg>
-            </button>
+            </button> -->
 
             <a href="https://www.puhaskivi.ee" class="header__logo flex">
-                <svg width="166" height="50" viewbox="0 0 166 50">
+                <svg width="200" height="77" viewbox="0 0 200 77">
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
 
             <nav class="header__navbar flex">
-                <button class=" header__burger-cls" aria-label="Закрыть меню">
+                <!-- <button class=" header__burger-cls header__burger-close" aria-label="Закрыть меню">
                   <svg width="29" height="29" viewbox="0 0 29 29" fill="#FFFFFF">
                     <use xlink:href="img/sprite.svg#burger-close"></use>
                   </svg>
-              </button>
+              </button> -->
                 <ul class="header__navbar-list flex">
                     <li class="header__navbar-item">
-                        <a class="header__navbar-link" href="#aboutus">Meist</a>
+                        <a class="header__navbar-link header__burger-close" href="#work">Meist</a>
                     </li>
                     <!-- <li class="header__navbar-item">
-                        <a class="header__navbar-link" href="works.html">Meie tööd</a>
+                        <a class="header__navbar-link header__burger-close" href="works.html">Meie tööd</a>
                     </li> -->
                     <li class="header__navbar-item">
-                        <a class="header__navbar-link" href="#contacts">Kontaktid</a>
+                        <a class="header__navbar-link header__burger-close" href="#footer">Kontaktid</a>
                     </li>
                 </ul>
             </nav>
@@ -74,7 +74,7 @@
                 </h2>
                 <blockquote class="about__quote">
                     <q>
-                      Lase samblast lahti ennem kui ta rikub sinu hoovi pilti
+                      Lase samblast lahti ennem kui ta rikub sinu hoovi&nbsp;pilti
                     </q>
                 </blockquote>
 
@@ -111,7 +111,7 @@
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading work__item-heading-two">
-                                Aeda pesemine
+                                Sambla eemaldamine
                             </h4>
                             <p class="work__item-text work__item-text-two">
                                 Meie kliimaga voib juhtuda nii et sammal kasvab kivide vahel ja kui lasta sellele protsessile edasi areneda siis kivi muutub tumedaks ja lõppude lõpuks võivad tekkida mõrasid
@@ -126,7 +126,8 @@
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading">
-                                Oleme avatud uutele pakkumistele </h4>
+                                Rehvijälje eemaldamine
+                            </h4>
                             <p class="work__item-text work__item-text-three">
                                 Autorehvid jätavad musta jälje kivi peal ja meie saame teid sellega aidata, eemaldame mustuse kiirelt ja kvaliteetselt&nbsp;ära
                                 <!-- <a class="work__item-link" href="#footer">siin</a> -->
@@ -147,7 +148,7 @@
 
 
             <div class=" footer__left">
-                <svg class="footer__left-logo" width="166" height="50" viewbox="0 0 166 50">
+                <svg class="footer__left-logo" width="200" height="77" viewbox="0 0 200 77">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
                 <h3 class="footer__left-heading">Kui vajate meie abi siis võtke julgelt ühendust</h3>
@@ -172,32 +173,43 @@
                         <a class="footer__left-link footer__left-tel" href="tel:+37255500362">+372 555 00 362
                       </a>
 
-                        <a class="footer__left-link footer__left-mob" href="tel:+37255500362">
+                        <!-- <a class="footer__left-link footer__left-mob" href="tel:+37255500362">
                             <svg width="60" height="60" viewbox="0 0 560 400">
                           <use xlink:href="img/sprite.svg#tel"></use>
                         </svg>
-                        </a>
+                        </a> -->
                     </li>
                 </ul>
             </div>
 
             <div class="footer__right flex">
                 <h3 class="footer__right-heading">SAADA PÄRING</h3>
-                <form class="footer__right-form flex" id="footer__form" action="POST">
-                    <input class="footer__right-input" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*">
-                    <input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Tel.*">
-                    <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Kommentaar" name="textarea" required form="footer__form"></textarea>
-                    <input class="footer__form-checkbox " type="checkbox ">
+                <form class="footer__right-form flex" id="footer__form" method="POST">
+                    <div class="footer__right-inblock"><input class="footer__right-input" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*" name="name"></div>
+                    <div class="footer__right-inblock"><input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Tel.*" name="tel"></div>
+                    <div class="footer__right-inblock"> <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Kommentaar" name="textarea" required form="footer__form"></textarea></div>
+
+                    <label class="footer__right-label" for="footer__right-checkbox">
+                    <input class="footer__right-checkbox visually-hidden" type="checkbox" id="footer__right-checkbox" checked required>
+                    <span class="footer__right-checustom">Готов на обработку данных</span>
+                    </label>
+                    <button class="footer__right-btn" type="submit">
+                      Saada
+                      </button>
                 </form>
-                <button class="footer__right-btn " type="submit ">
-                Saada
-                </button>
+
+
             </div>
         </div>
 
     </footer>
     <!-- JS -->
-    <script src="js/burger.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="js/burger.js"></script> -->
+    <script src="js/anchors.js"></script>
+    <script src="js/form/inputmask.min.js"></script>
+    <script src="js/form/just-validate.min.js"></script>
+    <script src="js/form/form.js"></script>
 </body>
 
 </html>

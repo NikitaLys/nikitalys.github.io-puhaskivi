@@ -68,7 +68,7 @@
         .header {
             background-color: rgba(49, 49, 49, 0.4);
         }
-        .header__burger-opn,
+        /* .header__burger-opn,
         .header__burger-cls {
             display: block;
         }
@@ -88,14 +88,14 @@
         }
         .header__navbar.active {
             display: block;
-        }
-        .header__navbar-list {
+        } */
+        /* .header__navbar-list {
             flex-direction: column;
             align-items: flex-start;
         }
         .header__navbar-item:not(:last-child) {
             margin-bottom: 20px;
-        }
+        } */
         /* MAIN */
         .main__background-right {
             display: none;
@@ -168,19 +168,17 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        .footer__right-form {
+        .footer__right-inblock {
             align-items: center;
         }
         .footer__right-input {
             margin-bottom: 15px;
-            width: 65%;
-            height: 45px;
+            width: 70%;
         }
         .footer__right-input-descr {
             height: 100px;
         }
         .footer__right-btn {
-            align-self: center;
             width: 35%;
             margin-right: 0;
             padding: 15px 25px;
@@ -203,12 +201,21 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
+            .header__logo {
+                filter: none;
+            }
             .header__logo svg {
                 height: 50px;
-                width: 100px;
+                width: 120px;
             }
-            .header__navbar {
+            /* .header__navbar {
                 padding: 40px 40px;
+            } */
+            .header__navbar-link {
+                font-size: 16px;
+            }
+            .header__navbar-item:not(:last-child) {
+                margin-right: 20px;
             }
             /* MAIN */
             .about {
@@ -255,24 +262,16 @@
                 line-height: 32px;
             }
             .footer__left-logo {
-                width: 100px;
+                width: 120px;
                 height: 50px;
                 margin-bottom: 20px;
-            }
-            .footer__left-list {
-                justify-content: space-around;
-            }
-            .footer__left-tel {
-                display: none;
-            }
-            .footer__left-mob {
-                display: block;
             }
             .footer__right-input {
                 margin-bottom: 15px;
                 width: 100%;
             }
             .footer__right-btn {
+                align-self: center;
                 width: 50%;
                 padding: 15px 25px;
                 font-size: 16px;

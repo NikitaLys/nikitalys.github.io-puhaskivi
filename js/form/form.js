@@ -1,8 +1,8 @@
 var selector = document.querySelector("input[type='tel']");
-var im = new Inputmask("+7(999) 999 9999");
-im.mask(selector);
+// var im = new Inputmask("+372 999 99999");
+// im.mask(selector);
 
-new JustValidate('.contact__form', {
+new JustValidate('.footer__right-form', {
     colorWrong: 'rgba(209, 22, 22, 1)',
     rules: {
         name: {
@@ -14,8 +14,6 @@ new JustValidate('.contact__form', {
             required: true,
 
             function: (name, value) => {
-                const phone = selector.inputmask.unmaskedvalue()
-
                 return Number(phone) && phone.length === 10;
             }
         },
@@ -23,8 +21,8 @@ new JustValidate('.contact__form', {
 
     },
     messages: {
-        name: 'Как вас зовут?',
-        tel: 'Недопустимый формат',
+        name: 'Teie nimi, palun',
+        tel: 'Vale sisendvormingus',
     },
 
 
