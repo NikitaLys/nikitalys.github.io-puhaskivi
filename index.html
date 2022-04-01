@@ -23,13 +23,12 @@
     <header class="header">
 
         <section class="container header__container flex">
-
             <!-- <button class="header__burger-opn" aria-label="Открыть меню">
               <svg width="36" height="29" viewbox="0 0 36 29" fill="none">
                 <use xlink:href="img/sprite.svg#burger-opn"></use>
               </svg>
             </button> -->
-
+            <h1 class="visuallyhidden">Puhaskivi cleaning</h1>
             <a href="https://www.puhaskivi.ee" class="header__logo flex">
                 <svg width="200" height="77" viewbox="0 0 200 77">
                     <use xlink:href="img/sprite.svg#logo"></use>
@@ -61,10 +60,10 @@
 
     <main class="main">
         <picture>
-            <img class="main__background-left" src="img/background/background.jpg" alt="">
+            <img class="main__background-left lazyload" src="img/background/background.jpg" alt="" aria-hidden="true">
         </picture>
         <picture>
-            <img class="main__background-right" src="img/background/background-right.webp" alt="">
+            <img class="main__background-right lazyload" src="img/background/background-right.webp" alt="" aria-hidden="true">
         </picture>
 
         <section class="about">
@@ -94,7 +93,7 @@
                 <ul class="work__list">
                     <li class="work__item">
                         <picture>
-                            <img class="work__img" src="img/work_for_index/work__list_one.jpg" height="600" width="600" alt="">
+                            <img class="work__img lazyload" src="img/work/work__list-one.jpg" height="600" width="600" alt="">
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading">
@@ -107,7 +106,7 @@
                     </li>
                     <li class="work__item">
                         <picture>
-                            <img class="work__img work__img-two" src="img/work_for_index/work__list_two.jpg" height="600" width="600" alt="">
+                            <img class="work__img work__img-two lazyload" src="img/work/work__list-two.jpg" height="600" width="600" alt="">
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading work__item-heading-two">
@@ -122,7 +121,7 @@
                     </li>
                     <li class="work__item">
                         <picture>
-                            <img class="work__img" src="img/work_for_index/work__list-three.jpg" height="600" width="600" alt="">
+                            <img class="work__img lazyload" src="img/work/work__list-three.jpg" height="600" width="600" alt="">
                         </picture>
                         <div class="work__item-descr">
                             <h4 class="work__item-heading">
@@ -185,9 +184,9 @@
             <div class="footer__right flex">
                 <h3 class="footer__right-heading">SAADA PÄRING</h3>
                 <form class="footer__right-form flex" id="footer__form" method="POST">
-                    <div class="footer__right-inblock"><input class="footer__right-input" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*" name="name"></div>
-                    <div class="footer__right-inblock"><input class="footer__right-input" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Tel.*" name="tel"></div>
-                    <div class="footer__right-inblock"> <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Kommentaar" name="textarea" required form="footer__form"></textarea></div>
+                    <input class="footer__right-input -req -name" type="text" data-validate-field="name" data-validate-rules="name" placeholder="Nimi*" name="name">
+                    <input class="footer__right-input -req -tel" type="tel" data-validate-field="tel" data-validate-rules="tel" placeholder="Tel.*" name="tel">
+                    <textarea class="footer__right-input footer__right-input-descr" type="text" placeholder="Kommentaar" name="textarea" form="footer__form"></textarea>
 
                     <label class="footer__right-label" for="footer__right-checkbox">
                     <input class="footer__right-checkbox visually-hidden" type="checkbox" id="footer__right-checkbox" checked required>
@@ -206,10 +205,14 @@
     <!-- JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
     <script src="js/burger.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="js/anchors.js"></script>
     <script src="js/form/inputmask.min.js"></script>
     <script src="js/form/just-validate.min.js"></script>
     <script src="js/form/form.js"></script>
+    <script>
+        lazyload();
+    </script>
 </body>
 
 </html>
